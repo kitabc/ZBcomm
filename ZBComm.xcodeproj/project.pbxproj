@@ -23,11 +23,11 @@
 		A8F160B91793ACFF00C042B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8F160941793ACFE00C042B3 /* Foundation.framework */; };
 		A8F160C11793ACFF00C042B3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A8F160BF1793ACFF00C042B3 /* InfoPlist.strings */; };
 		A8F160C41793ACFF00C042B3 /* ZBCommTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A8F160C31793ACFF00C042B3 /* ZBCommTests.m */; };
-		A8F160D61793AEDA00C042B3 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8F160D51793AEDA00C042B3 /* CoreLocation.framework */; };
 		A8F160D81793AF2A00C042B3 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8F160D71793AF2A00C042B3 /* CoreBluetooth.framework */; };
 		A8F160D91793AF3800C042B3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8F160961793ACFE00C042B3 /* CoreGraphics.framework */; };
-		A8F160DC1793B02200C042B3 /* SBTableAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = A8F160DB1793B02200C042B3 /* SBTableAlert.m */; };
 		A8F2A7021798EB8D00622014 /* libbluekitBLE.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A8F2A7011798EB8D00622014 /* libbluekitBLE.a */; };
+		A8FE129917A8A2AB00D09B5A /* SBTableAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = A8FE129817A8A2AB00D09B5A /* SBTableAlert.m */; };
+		A8FE129A17A8A3DC00D09B5A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8F160D51793AEDA00C042B3 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,11 +67,11 @@
 		A8F160C31793ACFF00C042B3 /* ZBCommTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZBCommTests.m; sourceTree = "<group>"; };
 		A8F160D51793AEDA00C042B3 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		A8F160D71793AF2A00C042B3 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
-		A8F160DA1793B02200C042B3 /* SBTableAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBTableAlert.h; path = ../../ControlMore/ControlMore/SBTableAlert.h; sourceTree = "<group>"; };
-		A8F160DB1793B02200C042B3 /* SBTableAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBTableAlert.m; path = ../../ControlMore/ControlMore/SBTableAlert.m; sourceTree = "<group>"; };
 		A8F2A6FF1798EB6A00622014 /* bluekitBle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bluekitBle.h; sourceTree = "<group>"; };
 		A8F2A7001798EB6A00622014 /* blueKitDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = blueKitDef.h; sourceTree = "<group>"; };
 		A8F2A7011798EB8D00622014 /* libbluekitBLE.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libbluekitBLE.a; sourceTree = "<group>"; };
+		A8FE129717A8A2AB00D09B5A /* SBTableAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBTableAlert.h; sourceTree = "<group>"; };
+		A8FE129817A8A2AB00D09B5A /* SBTableAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBTableAlert.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +79,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8FE129A17A8A3DC00D09B5A /* CoreLocation.framework in Frameworks */,
 				A8F160D91793AF3800C042B3 /* CoreGraphics.framework in Frameworks */,
 				A8F160D81793AF2A00C042B3 /* CoreBluetooth.framework in Frameworks */,
-				A8F160D61793AEDA00C042B3 /* CoreLocation.framework in Frameworks */,
 				A8F160931793ACFE00C042B3 /* UIKit.framework in Frameworks */,
 				A8F160951793ACFE00C042B3 /* Foundation.framework in Frameworks */,
 				A8F2A7021798EB8D00622014 /* libbluekitBLE.a in Frameworks */,
@@ -136,13 +136,13 @@
 		A8F160981793ACFE00C042B3 /* ZBComm */ = {
 			isa = PBXGroup;
 			children = (
+				A8FE129717A8A2AB00D09B5A /* SBTableAlert.h */,
+				A8FE129817A8A2AB00D09B5A /* SBTableAlert.m */,
 				A8F2A7011798EB8D00622014 /* libbluekitBLE.a */,
 				A8F2A6FF1798EB6A00622014 /* bluekitBle.h */,
 				A8F2A7001798EB6A00622014 /* blueKitDef.h */,
 				A80A42C5179627EC002F8C47 /* TXRXViewController.h */,
 				A80A42C6179627EC002F8C47 /* TXRXViewController.m */,
-				A8F160DA1793B02200C042B3 /* SBTableAlert.h */,
-				A8F160DB1793B02200C042B3 /* SBTableAlert.m */,
 				A8F160A11793ACFE00C042B3 /* AppDelegate.h */,
 				A8F160A21793ACFE00C042B3 /* AppDelegate.m */,
 				A8F160AA1793ACFF00C042B3 /* MainStoryboard.storyboard */,
@@ -299,8 +299,8 @@
 				A8F1609F1793ACFE00C042B3 /* main.m in Sources */,
 				A8F160A31793ACFE00C042B3 /* AppDelegate.m in Sources */,
 				A8F160AF1793ACFF00C042B3 /* ViewController.m in Sources */,
-				A8F160DC1793B02200C042B3 /* SBTableAlert.m in Sources */,
 				A80A42C7179627EC002F8C47 /* TXRXViewController.m in Sources */,
+				A8FE129917A8A2AB00D09B5A /* SBTableAlert.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
